@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechUprise: Tech Resume Keywords by Role</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for the TechUprise watermark */
+        .watermark-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.05; /* Very subtle */
+            pointer-events: none; /* Allows clicks to pass through */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .watermark-text {
+            font-size: 8rem; /* Large font size */
+            font-weight: 800; /* Extra bold */
+            color: #93c5fd; /* Light blue color for watermark */
+            transform: rotate(-45deg); /* Rotate for a dynamic look */
+            user-select: none; /* Prevent text selection */
+            background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 10px, transparent 10px, transparent 20px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 20px 20px;
+        }
+        /* Custom colors for consistency */
+        .text-dark-blue {
+            color: #1a202c; /* A darker shade for headings */
+        }
+        /* Custom styling for keyword tags */
+        .keyword-tag {
+            background-color: #f8fafc; /* Tailwind: bg-slate-50 or bg-gray-50 equivalent */
+            padding: 0.5rem 0.75rem; /* py-2 px-3 equivalent */
+            border-radius: 0.5rem; /* rounded-lg equivalent */
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* subtle shadow */
+            transition: all 0.2s ease-in-out;
+            cursor: pointer; /* Indicates interactivity, even without click action */
+            border: 1px solid #e2e8f0; /* Tailwind: border-slate-200 or border-gray-200 equivalent */
+            font-size: 0.875rem; /* text-sm equivalent */
+            text-align: center;
+        }
+        .keyword-tag:hover {
+            background-color: #e0f2fe; /* Tailwind: hover:bg-blue-100 equivalent */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* hover:shadow-md equivalent */
+        }
+    </style>
+</head>
+<body class="antialiased bg-white text-gray-900 min-h-screen flex flex-col relative">
+
+    <!-- Watermark Overlay -->
+    <div class="watermark-overlay">
+        <span class="watermark-text">TechUprise</span>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-4 py-8 md:px-8 lg:px-12 relative z-10">
+
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 md:p-12 lg:p-16 rounded-xl shadow-lg mb-12 relative overflow-hidden">
+            <!-- Decorative shapes -->
+            <div class="absolute top-0 left-0 w-32 h-32 bg-purple-500 opacity-20 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-48 h-48 bg-blue-500 opacity-20 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+
+            <!-- Product Name -->
+            <p class="text-xl sm:text-2xl lg:text-3xl font-extrabold mb-2 leading-tight">
+                TechUprise: Interview Xpress 30
+            </p>
+            <!-- Tagline -->
+            <p class="text-lg sm:text-xl font-light mb-4 italic">
+                Optimize Your Resume — Get Past the Bots.
+            </p>
+            <!-- Guide Title -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 leading-tight">
+                ✅ Tech Resume Keywords by Role
+            </h1>
+
+            <div class="mt-6 flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0">
+                <img
+                  src="https://placehold.co/150x150/800080/FFFFFF?text=Keywords"
+                  alt="Keywords Icon"
+                  class="w-20 h-20 sm:w-24 sm:h-24 rounded-full shadow-md border-4 border-purple-300"
+                  onerror="this.onerror=null; this.src='https://placehold.co/150x150/800080/FFFFFF?text=Keywords';"
+                />
+                <p class="text-md sm:text-lg italic font-medium">
+                    Use these targeted keywords to ensure your resume stands out to Applicant Tracking Systems (ATS) and recruiters.
+                </p>
+            </div>
+        </section>
+
+        <!-- How to Use These Keywords Section -->
+        <section class="bg-blue-100 p-6 md:p-8 rounded-xl shadow-md mb-12 border border-blue-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-6 flex items-center">
+                <span class="mr-2 text-purple-600 text-3xl">💡</span> How to Effectively Use These Keywords
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-3">
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-500 text-xl flex-shrink-0 mt-0.5">✅</span>
+                    <p><strong class="text-blue-800">Tailor to Job Descriptions:</strong> Always match keywords directly from the job posting. If a JD says "React.js," use "React.js" not just "React."</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-500 text-xl flex-shrink-0 mt-0.5">✅</span>
+                    <p><strong class="text-blue-800">Integrate Naturally:</strong> Avoid "keyword stuffing." Weave these terms into your bullet points, demonstrating *how* you used the skill to achieve an impact.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-500 text-xl flex-shrink-0 mt-0.5">✅</span>
+                    <p><strong class="text-blue-800">Vary Synonyms (Carefully):</strong> While exact matches are best, sometimes a slight variation is needed. For example, if a job uses "Front-end," ensure you have that alongside "Frontend."</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-500 text-xl flex-shrink-0 mt-0.5">✅</span>
+                    <p><strong class="text-blue-800">Focus on Impact:</strong> Keywords get you past ATS, but demonstrating *what you achieved* with those skills (e.g., "Improved page load speed by 40% using React optimizations") gets you the interview.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Roles Section -->
+        <section class="bg-white p-6 md:p-8 rounded-xl shadow-md mb-12 border border-gray-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-6">
+                Key Keywords for Top Tech Roles:
+            </h2>
+
+            <!-- Frontend Developer -->
+            <div class="mb-8 p-4 bg-blue-50 rounded-lg shadow-sm border border-blue-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-blue-700 mb-3 flex items-center">
+                    <span class="mr-2 text-purple-600 text-2xl">💻</span> Frontend Developer
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="keyword-tag">HTML</span>
+                    <span class="keyword-tag">CSS</span>
+                    <span class="keyword-tag">JavaScript</span>
+                    <span class="keyword-tag">React.js</span>
+                    <span class="keyword-tag">Next.js</span>
+                    <span class="keyword-tag">Vue.js</span>
+                    <span class="keyword-tag">Angular</span>
+                    <span class="keyword-tag">TypeScript</span>
+                    <span class="keyword-tag">Tailwind CSS</span>
+                    <span class="keyword-tag">Bootstrap</span>
+                    <span class="keyword-tag">Chakra UI</span>
+                    <span class="keyword-tag">Redux</span>
+                    <span class="keyword-tag">REST APIs</span>
+                    <span class="keyword-tag">Responsive Design</span>
+                    <span class="keyword-tag">Cross-browser Compatibility</span>
+                    <span class="keyword-tag">Web Accessibility (a11y)</span>
+                    <span class="keyword-tag">Figma to Code</span>
+                    <span class="keyword-tag">DOM Manipulation</span>
+                    <span class="keyword-tag">Webpack</span>
+                    <span class="keyword-tag">Vite</span>
+                    <span class="keyword-tag">Jest</span>
+                    <span class="keyword-tag">React Testing Library</span>
+                    <span class="keyword-tag">CI/CD</span>
+                    <span class="keyword-tag">Frontend Architecture</span>
+                    <span class="keyword-tag">Performance Optimization</span>
+                    <span class="keyword-tag">SEO Best Practices</span>
+                    <span class="keyword-tag">GraphQL</span>
+                    <span class="keyword-tag">Styled Components</span>
+                    <span class="keyword-tag">Material UI</span>
+                    <span class="keyword-tag">Git</span>
+                    <span class="keyword-tag">Version Control</span>
+                </div>
+            </div>
+
+            <!-- Backend Developer -->
+            <div class="mb-8 p-4 bg-purple-50 rounded-lg shadow-sm border border-purple-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-purple-700 mb-3 flex items-center">
+                    <span class="mr-2 text-pink-600 text-2xl">⚙️</span> Backend Developer
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="keyword-tag">Node.js</span>
+                    <span class="keyword-tag">Express.js</span>
+                    <span class="keyword-tag">Django</span>
+                    <span class="keyword-tag">Flask</span>
+                    <span class="keyword-tag">Spring Boot</span>
+                    <span class="keyword-tag">Java</span>
+                    <span class="keyword-tag">Python</span>
+                    <span class="keyword-tag">Golang</span>
+                    <span class="keyword-tag">MongoDB</span>
+                    <span class="keyword-tag">MySQL</span>
+                    <span class="keyword-tag">PostgreSQL</span>
+                    <span class="keyword-tag">REST API Development</span>
+                    <span class="keyword-tag">GraphQL</span>
+                    <span class="keyword-tag">Authentication (JWT, OAuth)</span>
+                    <span class="keyword-tag">CRUD Operations</span>
+                    <span class="keyword-tag">MVC Architecture</span>
+                    <span class="keyword-tag">ORMs (Sequelize, Prisma, Mongoose)</span>
+                    <span class="keyword-tag">Redis</span>
+                    <span class="keyword-tag">Firebase Admin</span>
+                    <span class="keyword-tag">Serverless Functions</span>
+                    <span class="keyword-tag">API Rate Limiting</span>
+                    <span class="keyword-tag">Unit Testing</span>
+                    <span class="keyword-tag">Integration Testing</span>
+                    <span class="keyword-tag">Docker</span>
+                    <span class="keyword-tag">CI/CD Pipelines</span>
+                    <span class="keyword-tag">Load Balancing</span>
+                    <span class="keyword-tag">Microservices</span>
+                    <span class="keyword-tag">WebSockets</span>
+                    <span class="keyword-tag">AWS Lambda</span>
+                    <span class="keyword-tag">Scalability</span>
+                </div>
+            </div>
+
+            <!-- Data Analyst -->
+            <div class="mb-8 p-4 bg-blue-50 rounded-lg shadow-sm border border-blue-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-blue-700 mb-3 flex items-center">
+                    <span class="mr-2 text-purple-600 text-2xl">📊</span> Data Analyst
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="keyword-tag">SQL</span>
+                    <span class="keyword-tag">Excel</span>
+                    <span class="keyword-tag">Tableau</span>
+                    <span class="keyword-tag">Power BI</span>
+                    <span class="keyword-tag">Looker</span>
+                    <span class="keyword-tag">Google Data Studio</span>
+                    <span class="keyword-tag">Python for Data Analysis</span>
+                    <span class="keyword-tag">NumPy</span>
+                    <span class="keyword-tag">Pandas</span>
+                    <span class="keyword-tag">Data Cleaning</span>
+                    <span class="keyword-tag">Data Visualization</span>
+                    <span class="keyword-tag">Business Intelligence</span>
+                    <span class="keyword-tag">A/B Testing</span>
+                    <span class="keyword-tag">Statistics</span>
+                    <span class="keyword-tag">Descriptive Analytics</span>
+                    <span class="keyword-tag">Inferential Statistics</span>
+                    <span class="keyword-tag">Exploratory Data Analysis (EDA)</span>
+                    <span class="keyword-tag">Data Wrangling</span>
+                    <span class="keyword-tag">Regression Analysis</span>
+                    <span class="keyword-tag">Pivot Tables</span>
+                    <span class="keyword-tag">Joins & Subqueries</span>
+                    <span class="keyword-tag">Data Aggregation</span>
+                    <span class="keyword-tag">KPI Reporting</span>
+                    <span class="keyword-tag">Dashboards</span>
+                    <span class="keyword-tag">Data Interpretation</span>
+                    <span class="keyword-tag">Hypothesis Testing</span>
+                    <span class="keyword-tag">Correlation Analysis</span>
+                    <span class="keyword-tag">Time Series Analysis</span>
+                    <span class="keyword-tag">Google Sheets</span>
+                    <span class="keyword-tag">BigQuery</span>
+                </div>
+            </div>
+
+            <!-- Machine Learning / Data Science -->
+            <div class="mb-8 p-4 bg-purple-50 rounded-lg shadow-sm border border-purple-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-purple-700 mb-3 flex items-center">
+                    <span class="mr-2 text-pink-600 text-2xl">🤖</span> Machine Learning / Data Science
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="keyword-tag">Python</span>
+                    <span class="keyword-tag">R</span>
+                    <span class="keyword-tag">Scikit-learn</span>
+                    <span class="keyword-tag">TensorFlow</span>
+                    <span class="keyword-tag">Keras</span>
+                    <span class="keyword-tag">PyTorch</span>
+                    <span class="keyword-tag">NLP</span>
+                    <span class="keyword-tag">Computer Vision</span>
+                    <span class="keyword-tag">OpenCV</span>
+                    <span class="keyword-tag">Model Deployment</span>
+                    <span class="keyword-tag">Model Evaluation</span>
+                    <span class="keyword-tag">ML Pipelines</span>
+                    <span class="keyword-tag">Hyperparameter Tuning</span>
+                    <span class="keyword-tag">Data Preprocessing</span>
+                    <span class="keyword-tag">Feature Engineering</span>
+                    <span class="keyword-tag">Pandas</span>
+                    <span class="keyword-tag">NumPy</span>
+                    <span class="keyword-tag">Matplotlib</span>
+                    <span class="keyword-tag">Seaborn</span>
+                    <span class="keyword-tag">EDA</span>
+                    <span class="keyword-tag">Classification Models</span>
+                    <span class="keyword-tag">Regression Models</span>
+                    <span class="keyword-tag">Clustering</span>
+                    <span class="keyword-tag">Dimensionality Reduction</span>
+                    <span class="keyword-tag">Random Forest</span>
+                    <span class="keyword-tag">SVM</span>
+                    <span class="keyword-tag">XGBoost</span>
+                    <span class="keyword-tag">LightGBM</span>
+                    <span class="keyword-tag">Deep Learning</span>
+                    <span class="keyword-tag">CNNs</span>
+                    <span class="keyword-tag">RNNs</span>
+                    <span class="keyword-tag">Transformers</span>
+                    <span class="keyword-tag">HuggingFace</span>
+                    <span class="keyword-tag">Streamlit</span>
+                    <span class="keyword-tag">MLflow</span>
+                </div>
+            </div>
+
+            <!-- Full Stack Developer -->
+            <div class="mb-8 p-4 bg-blue-50 rounded-lg shadow-sm border border-blue-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-blue-700 mb-3 flex items-center">
+                    <span class="mr-2 text-purple-600 text-2xl">🌐</span> Full Stack Developer
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="keyword-tag">HTML</span>
+                    <span class="keyword-tag">CSS</span>
+                    <span class="keyword-tag">JavaScript</span>
+                    <span class="keyword-tag">React</span>
+                    <span class="keyword-tag">Node.js</span>
+                    <span class="keyword-tag">Express.js</span>
+                    <span class="keyword-tag">MongoDB</span>
+                    <span class="keyword-tag">MySQL</span>
+                    <span class="keyword-tag">REST APIs</span>
+                    <span class="keyword-tag">GraphQL</span>
+                    <span class="keyword-tag">JWT Authentication</span>
+                    <span class="keyword-tag">MVC</span>
+                    <span class="keyword-tag">React Router</span>
+                    <span class="keyword-tag">Postman</span>
+                    <span class="keyword-tag">CI/CD</span>
+                    <span class="keyword-tag">Git</span>
+                    <span class="keyword-tag">GitHub</span>
+                    <span class="keyword-tag">Nginx</span>
+                    <span class="keyword-tag">Docker</span>
+                    <span class="keyword-tag">AWS EC2</span>
+                    <span class="keyword-tag">Vercel</span>
+                    <span class="keyword-tag">Netlify</span>
+                    <span class="keyword-tag">Frontend + Backend Integration</span>
+                    <span class="keyword-tag">Microservices</span>
+                    <span class="keyword-tag">State Management</span>
+                    <span class="keyword-tag">Database Design</span>
+                    <span class="keyword-tag">API Documentation (Swagger)</span>
+                    <span class="keyword-tag">Unit Testing</span>
+                    <span class="keyword-tag">Deployment Automation</span>
+                    <span class="keyword-tag">Socket.io</span>
+                    <span class="keyword-tag">Bash Scripting</span>
+                </div>
+            </div>
+
+            <!-- DevOps / Cloud -->
+            <div class="p-4 bg-purple-50 rounded-lg shadow-sm border border-purple-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-purple-700 mb-3 flex items-center">
+                    <span class="mr-2 text-pink-600 text-2xl">🛡️</span> DevOps / Cloud
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="keyword-tag">AWS</span>
+                    <span class="keyword-tag">Azure</span>
+                    <span class="keyword-tag">GCP</span>
+                    <span class="keyword-tag">EC2</span>
+                    <span class="keyword-tag">S3</span>
+                    <span class="keyword-tag">IAM</span>
+                    <span class="keyword-tag">Docker</span>
+                    <span class="keyword-tag">Kubernetes</span>
+                    <span class="keyword-tag">Terraform</span>
+                    <span class="keyword-tag">Ansible</span>
+                    <span class="keyword-tag">CI/CD</span>
+                    <span class="keyword-tag">Jenkins</span>
+                    <span class="keyword-tag">GitHub Actions</span>
+                    <span class="keyword-tag">Monitoring & Logging</span>
+                    <span class="keyword-tag">Prometheus</span>
+                    <span class="keyword-tag">Grafana</span>
+                    <span class="keyword-tag">Infrastructure as Code</span>
+                    <span class="keyword-tag">CloudFormation</span>
+                    <span class="keyword-tag">Serverless</span>
+                    <span class="keyword-tag">Lambda</span>
+                    <span class="keyword-tag">API Gateway</span>
+                    <span class="keyword-tag">Load Balancing</span>
+                    <span class="keyword-tag">Auto Scaling</span>
+                    <span class="keyword-tag">VPC</span>
+                    <span class="keyword-tag">SSH</span>
+                    <span class="keyword-tag">Bash Scripting</span>
+                    <span class="keyword-tag">Networking Basics</span>
+                    <span class="keyword-tag">Cloud Security</span>
+                    <span class="keyword-tag">SSL Certificates</span>
+                    <span class="keyword-tag">SLA Monitoring</span>
+                    <span class="keyword-tag">Incident Response</span>
+                    <span class="keyword-tag">Version Control</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Dummy User ID Section (Not relevant for static HTML, but retained for consistency) -->
+        <div class="text-xs text-gray-500 text-center mt-12 p-2 bg-gray-100 rounded-md">
+            User ID: guide-viewer-id (This ID is for collaborative features and may vary across sessions)
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white p-4 text-center text-sm mt-8 shadow-inner">
+        &copy; <span id="current-year"></span> TechUprise Resume Keywords Guide
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set dynamic copyright year in footer
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            } else {
+                console.error("Element with ID 'current-year' not found in footer. Cannot set copyright year.");
+            }
+        });
+    </script>
+</body>
+</html>
